@@ -5,10 +5,6 @@
 ./popcorn-time-chromecast/index.html
 ./popcorn-time-mac-os-x/index.html
 ./popcorn-time-airplay-apple-tv/index.html
-./category/nyheter/feed/index.html
-./category/nyheter/page/3/index.html
-./category/nyheter/page/2/index.html
-./category/nyheter/index.html
 ./popcorn-time-android/index.html
 ./nyheter/popcorn-time-community-edition/index.html
 ./nyheter/time4popcorn-beta-5-3/index.html
@@ -24,8 +20,6 @@
 ./nyheter/android-beta-2-7-fra-time4popcorn/index.html
 ./nyheter/flixtor-er-tilbake/index.html
 ./nyheter/popcorn-time-for-android-beta-2-5/index.html
-./nyheter/page/3/index.html
-./nyheter/page/2/index.html
 ./nyheter/forsette-a-bruke-popcorn-time/index.html
 ./nyheter/time4popcorn-beta-5-4/index.html
 ./nyheter/fa-popcorn-time-for-ios-ipad-og-iphone-uten-jailbreak-ved-hjelp-av-ios-installer/index.html
@@ -36,4 +30,3 @@
 ./nyheter/index.html
 ./download-popcorn-time/index.html
 ./ios/index.html
-./sitemap/index.html
