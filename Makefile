@@ -9,6 +9,7 @@ COVERSIZE=`cat COVERSIZE`
 BASEURL=`cat BASEURL`
 
 generated/%.embed.pdf: static/%.rst
+	mkdir -p generated
 	pandoc $^ -o $@ -H templates/preamble.tex
 
 generated/%.pdf: generated/%.embed.pdf
