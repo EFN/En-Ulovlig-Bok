@@ -14,7 +14,7 @@ popcorn-time.no.  Teksten anses av EFN å være et hitteverk, da selv
 politietterforskning ikke har klart å spore opp forfatteren.
 
 Manuskriftet ble gjenutgitt som bok av Elektronisk Forpost Norge for å
-lå flere få gjøre seg opp en mening om innholdet.
+la flere få gjøre seg opp en mening om innholdet.
 
 | Elektronisk forpost Norge <post@efn.no>
 | Middelthuns gate 25
