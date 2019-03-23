@@ -1,5 +1,25 @@
 #!/usr/bin/perl
 
+sub portopen {
+  my $host = $_[0];
+  my $port = $_[1];
+  #QUICK HACK to check if port is open
+  system("nc -z localhost 9222");
+  return not $?;
+}
+
+my $pid = 0;
+if (!portopen("localhost", 9222)) {
+  print "Starting chrome instance\n";
+  $pid = fork();
+  if (not $pid) {
+    exec("chromium --headless --remote-debugging-port=9222");
+  }
+  #Give Chrome a chance to start
+  sleep(2);
+}
+
+
 $dir=$ARGV[0];
 $baseurl=$ARGV[1];
 $papersize=$ARGV[2];
@@ -25,4 +45,9 @@ while (<URLS>) {
 	      "--papersize", $papersize, "$dir/tmp.pdf");
   system(@cmd);
   unlink("$dir/tmp.pdf");
+}
+
+if ($pid) {
+  print "Shutting down chrome instance\n";
+  kill 'TERM', $pid;
 }
